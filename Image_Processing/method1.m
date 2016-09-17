@@ -40,5 +40,6 @@ figure(2);
 subplot(121), imshow(BlurandNoise), title('加噪退化图像');
 subplot(122), imshow(Reimage), title('还原图像1:逆滤波');
 
+%
 % 由结果可知，加上噪声后逆滤波几乎不可用，原因在于当退化函数H(u,v)趋近于0时，N(u,v)/H(u,v)项
 % 会覆盖掉F(u,v),噪声被急剧放大,导致逆滤波得到的图像与原图像严重不符
