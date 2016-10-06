@@ -46,8 +46,3 @@ Noise_info = row * col *(V + m^2);
 figure(2);
 subplot(121), imshow(BlurandNoise), title('加噪退化图像');
 subplot(122), imshow(Reimage), title('还原图像3.pro:约束最小二乘法滤波2');
-
-% 由结果可知,滤波效果不好,模糊过于严重,相当于method3中的gamma值取到100多
-% 而由method3中的参数估计分析可知gamma取值在2~4左右得到的效果较好
-% 而此滤波结果与直接调用系统自带函数deconvreg的结果类似
-% 此结果的出现可能与噪声谱功率计算的近似估计不准确有关
