@@ -1,10 +1,10 @@
 function [Reimage, lagra] = f_deconvreg(I,PSF,Noise_info)
 % 约束最小二乘滤波器
-% 函数输入: 
+% 函数输入:
 %        I: 输入的二维图像矩阵
 %        PSF: 退化函数的空域模板
 %        Noise_info: 噪声功率
-% 函数输出: 
+% 函数输出:
 %        Reimage: 约束最小平方滤波图像
 %        lagra: 指定约束最小平方的最佳复原参数y
 
